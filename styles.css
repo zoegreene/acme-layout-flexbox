@@ -1,0 +1,172 @@
+* {
+  font-family: 'Calibri', sans-serif;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  background-color:#0398fc;
+  color: white;
+  padding: 1rem;
+  height: 1.5rem;
+  align-items: center;
+}
+
+nav h1 {
+  flex: 1;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-around;
+  flex: 3;
+}
+
+.pages div:nth-child(1) {
+  font-weight: bolder;
+}
+
+/* Create a User Section */
+
+.users {
+  color: darkslategray;
+  padding: 0 1rem 0 1rem;
+  font-size: 18pt;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  color: darkslategray;
+  border: 1pt solid black;
+  border-radius: 5px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > h1 {
+  padding: 0 0 0 1rem;
+}
+
+.first-name {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.first-name > label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.first-name > input {
+  flex: 3;
+}
+
+.last-name {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.last-name > label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.last-name > input {
+  flex: 3;
+}
+
+.department {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.department > label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.department > select {
+  flex: 3;
+}
+
+.submit-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.submit-buttons button:nth-child(2) {
+  background-color: #0398fc;
+  color: white;
+  border: 1px solid black;
+}
+
+/* Submitted User Cards Section */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.cards div {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: darkslategray;
+  width: calc((100% / 3) - 5rem);
+}
+
+/* Mobile Sizing */
+
+@media (max-width: 600px) {
+  .pages > div {
+    padding: 0.5rem;
+  }
+
+  .pages {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    padding-top: 0rem;
+  }
+
+  .form > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form > h1 {
+    font-size: 24px;
+  }
+
+  .form {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards > div {
+    width: auto;
+  }
+}
